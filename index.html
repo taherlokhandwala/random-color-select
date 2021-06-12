@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>RGB Color Selector</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="range-red">
+        <h2>R</h2>
+        <input type="range" class="red" min="0" max="255" value="63" />
+        <div class="red-value"><p></p></div>
+        <div class="plus"><i class="far fa-plus-square"></i></div>
+        <div class="minus"><i class="far fa-minus-square"></i></div>
+      </div>
+      <div class="range-green">
+        <h2>G</h2>
+        <input type="range" class="green" min="0" max="255" value="244" />
+        <div class="green-value"><p></p></div>
+        <div class="plus"><i class="far fa-plus-square"></i></div>
+        <div class="minus"><i class="far fa-minus-square"></i></div>
+      </div>
+      <div class="range-blue">
+        <h2>B</h2>
+        <input type="range" class="blue" min="0" max="255" value="208" />
+        <div class="blue-value"><p></p></div>
+        <div class="plus"><i class="far fa-plus-square"></i></div>
+        <div class="minus"><i class="far fa-minus-square"></i></div>
+      </div>
+      <div class="random-color">
+        <button type="button">Random Color</button>
+      </div>
+      <div class="color-container">
+        <span class="tooltip">Click to Copy To Clipboard</span>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

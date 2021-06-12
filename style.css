@@ -1,0 +1,75 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Patrick Hand", cursive;
+}
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.color-container {
+  height: 150px;
+  width: 150px;
+  background: rgb(63, 244, 208);
+  box-shadow: 20px 20px 6px rgba(63, 244, 208, 0.5);
+  margin-top: 30px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+.tooltip {
+  visibility: hidden;
+  background-color: rgb(87, 87, 87);
+  color: #fff;
+  text-align: center;
+  padding: 5px 3px;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 105%;
+  min-width: 100px;
+  transform: translateY(-50%);
+}
+.tooltip::after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent rgb(87, 87, 87) transparent transparent;
+}
+.color-container:hover .tooltip {
+  visibility: visible;
+}
+.range-red,
+.range-green,
+.range-blue {
+  display: flex;
+  align-items: center;
+}
+
+input[type="range"] {
+  outline: none;
+  border: none;
+  margin: 15px 15px;
+}
+input[type="range"]::-moz-focus-outer {
+  outline: none;
+  border: none;
+}
+.plus,
+.minus {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.random-color button {
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 18px;
+}
